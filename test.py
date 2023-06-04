@@ -448,7 +448,7 @@ class Events(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        badwords = ['彥仁', 'Allen', '凱畯', '凱駿', '水梨', '梨子']
+        badwords = ['彥仁', 'Allen', '凱畯', '凱駿', '水梨', '梨子', '蜘蛛']
         for i in badwords: # Go through the list of bad words;
             if i in message.content:
                 #  await message.delete()
